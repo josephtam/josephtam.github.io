@@ -39,7 +39,7 @@ span {
 @media only screen and (min-width:568pt) {
 
     body {
-        background: url("../Images/background.jpg");
+        background: url("../Images/background.png");
     }
 
     #wrapper {
