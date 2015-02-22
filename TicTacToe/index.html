@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<link type="text/css" rel="stylesheet" href="Styles/stylesheet.css" />
+	<link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<script type="text/javascript" src="Script/game.js"></script>
+	<title>Joseph Tam &amp; Jason Kolenosky</title>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+				<h1>Tic-Tac-Toe Game</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p id="winner">Drag the dragon and monkey images into the tic-tac-toe board:</p>
+			</div>
+		</div>
+		<div class="row main">
+			<div class="col-md-3"></div>
+			<div class="col-md-1 hidden-md hidden-lg">
+				<img id="drag1" class="dragX" src="Images/Dragon.png" draggable="true" ondragstart="drag(event)" alt="X-Image"/>
+			</div>
+			<div class="col-md-1 hidden-xs hidden-sm">
+				<table class="imageTable">
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><img id="drag11" class="dragX" src="Images/Dragon.png" draggable="true" ondragstart="drag(event)" alt="X-Image" /></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>			
+			</div>
+			<div class="col-md-4">
+				<table id="playGrid">
+					<tr>		
+						<td><div id="div0" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div1" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div2" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					</tr>
+					<tr>		
+						<td><div id="div3" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div4" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div5" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					</tr>
+					<tr>		
+						<td><div id="div6" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div7" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+						<td><div id="div8" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-1 hidden-xs hidden-sm">
+				<table class="imageTable">
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><img id="drag2" class="dragO" src="Images/Monkey.png" draggable="true" ondragstart="drag(event)" alt="O-Image" /></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>			
+			</div>
+			<div class="col-md-1 hidden-md hidden-lg">
+				<img id="drag22" class="dragO" src="Images/Monkey.png" draggable="true" ondragstart="drag(event)" alt="O-Image"/>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 button">
+				<button type="reset" value="reset" onclick="reset()">Reset/Play Again</button>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="col-md-6">
+				<p id="joseph"><a href='ma&#105;lto&#58;jo&#115;e%70&#104;&#116;am3&#37;40gmail&#46;&#37;&#54;3om'>Joseph Tam</a>&nbsp;&nbsp;&nbsp;A00926365</p>
+			</div>
+			<div class="col-md-6">
+				<p id="jason"><a href="mailto:&#074;&#097;&#115;&#111;&#110;&#075;&#053;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Jason Kolenosky</a>&nbsp;&nbsp;&nbsp;A00911464</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
