@@ -1,0 +1,155 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+h3 {
+    font-family: arial,sans-serif;
+}
+
+article {
+	padding: 5px;
+    padding-bottom: 60px;
+}
+
+#signs {
+    padding-bottom: 60px;
+}
+p {
+    font-family: Arial,sans-serif;
+    font-size: 1em;
+}
+
+table {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial,sans-serif;
+    font-size: 1em;
+}
+
+span {
+    font-weight: bold;
+    color: black;
+    }
+
+@media only screen and (min-width:568pt) {
+
+    body {
+        background: url("../Images/background.jpg");
+    }
+
+    #wrapper {
+        width: 700px;
+        min-height: 100%;
+        background-color: #fcfdd8;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav {
+        width: 600px;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #imgHead {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+    }
+
+    #container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        width: 600px;
+        border-top: 2px solid black;
+        font-size: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50px;
+    }
+
+    #signs a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .col2 {
+        width: 300px;
+    }
+
+    #submit {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:568pt) {
+
+    #banner {
+        width: 325px;
+    }
+    
+    .button {
+        width: 90px;
+    }
+
+    #wrapper {
+        min-height: 100%;
+        background-color: #fcfdd8;
+    }
+
+    .footer {
+        font-size: .55em;
+        border-top: 1px solid black;
+        margin-top: -50px;
+        font-family: arial,sans-serif;
+    }
+
+    article {
+        min-width: 320px;   
+		padding: 5px;
+    }
+
+    #nav {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        min-width: 300px;
+    }
+
+    .col2 {
+        width: 175px;
+    }
+
+    #signs {
+        min-width: 300px;
+    }
+
+    #submit {
+        display: block;
+        text-align: left;
+        width: 90px;
+    }
+
+    #imgHead {
+    display: none;
+    }
+}
+    
